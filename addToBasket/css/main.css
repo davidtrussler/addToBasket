@@ -1,0 +1,153 @@
+/*
+ * BEGIN CSS Reset -- 
+**/
+html, 
+body {
+	margin: 0;
+	padding: 0; 
+	border: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.25;
+	font-size: 0.9em;
+	-webkit-text-size-adjust: none; /*for iOS on change of orientation */
+}
+
+p, ul, h1, h2, h3, h4, 
+fieldset, legend, input, button {
+	padding: 0; 
+	margin: 0; 
+}
+
+ul {
+	list-style: none; 
+}
+
+table { 
+	width: 100%; 
+	border-collapse: collapse;
+	border-spacing: 0; 
+}
+/* -- END CSS Reset */
+
+h1 {
+	font-size: 2em; 
+}
+
+h2 {
+	font-size: 1.5em; 
+}
+
+h3 {
+	font-size: 1.2em; 
+}
+
+body > header, 
+body > section, 
+body > footer {
+	width: 95%; 
+	margin: 0 auto; 
+	clear: both; 
+}
+
+body > header {
+	margin-top: 1em; 
+	margin-bottom: 0.5em; 
+	padding-bottom: 0.5em; 
+	border-bottom: solid 2px #666; 
+}
+
+body > header:after {
+	display: block; 
+	content: '.';
+	clear: both;  
+	height: 0; 
+	visibility: hidden; 
+}
+
+body > header #basket {
+	float: right; 
+	position: relative; 
+}
+
+body > header #basketContents {
+	position: absolute; 
+	right: 0; 
+	border: solid 1px; 
+	background: #fff; 
+	padding: 0.5em; 
+	border-radius: 0.25em; 
+	box-shadow: -0.25em 0.25em 0.25em rgba(0, 0, 0, 0.5); 
+}
+
+body > header #basketContents.hide {
+	opacity: 0; 
+}
+
+body > header #basketContents p#close {
+	width: 100%; 
+	text-align: right; 
+}
+
+body > header #basketContents p#close > a > span {
+	display: inline-block;
+	width: 1em;
+	border: solid 2px;
+	border-radius: 1.25em;
+	padding: .25em;
+	margin: 0 0 0 0.5em;
+	text-align: center;
+	line-height: 1;
+	font-weight: bold;
+}
+
+body > header #basketContents > ul > li {
+	border-top: dotted 1px; 
+	margin: 0.5em 0 0; 
+	padding: 0.5em 0 0; 
+	font-weight: bold; 
+}
+
+body > header #basketContents > ul > li:first-child {
+	border-top: none; 
+	margin-top: 0; 
+	padding-top: 0; 
+}
+
+body > header #basketContents li.productTitle {
+	font-size: 1.25em; 
+}
+
+body > header #basketContents li span.label {
+	font-weight: normal; 
+}
+
+body > header #basketContents li span.label:after {
+	content: ': '; 
+}
+
+body > header h1 {
+	float: left; 
+}
+
+body > footer {
+	margin-top: 0.5em; 
+	padding-top: 0.5em; 
+	margin-bottom: 1em; 
+	border-top: solid 2px #666; 
+}
+
+body > footer p {
+	text-align: right; 
+}
+
+fieldset {
+	border: none; 
+}
+
+option, 
+button {
+	font-size: 1em; 
+}

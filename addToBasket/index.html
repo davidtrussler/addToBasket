@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Add to Basket</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<link type="text/css" href="css/main.css" rel="stylesheet" />
+
+		<script type="text/javascript" src="js/Basket.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Add to Basket</h1>	
+
+			<div id="basket">
+				<h3><a href="#" id="basketLink">My Basket</a></h3>
+			
+				<p id="numItems">
+					<span>0</span> item(s)
+				</p>
+
+				<div id="basketContents" class="hide"></div>
+			</div>
+		</header>
+		
+		<section>
+			<h2 id="productTitle">Per Una Speziale Contrast Print Panelled Bodycon Dress</h2>
+
+            <p id="productPrice">£79.00</p>
+
+			<form name="addToBasket">
+				<fieldset>
+					<div class="element">
+						<label for="colour">Colour:</label>
+
+						<select id="colour" name="productColour">
+							<option>Red</option>
+							<option>Green</option>
+							<option>Blue</option>
+							<option>Yellow</option>
+						</select>
+					</div>
+
+					<div class="element">
+						<label for="size">Size:</label>
+
+						<select id="size" name="productSize">
+							<option>8</option>
+							<option>10</option>
+							<option>12</option>
+							<option>14</option>
+						</select>
+					</div>
+
+					<div class="element">
+						<label for="quantity">Quantity:</label>
+
+						<select id="quantity" name="productQuantity">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+				</fieldset>
+
+				<button>Add to basket</button>
+			</form>
+		</section>
+		
+		<footer>
+			<p>David Trussler, January 2014</p>
+		</footer>
+	</body>
+</html>
